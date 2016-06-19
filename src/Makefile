@@ -191,8 +191,10 @@ Makefile: AngryThing.pro C:/Qt/Qt5.6.0/5.6/mingw49_32/mkspecs/win32-g++/qmake.co
 		C:/Qt/Qt5.6.0/5.6/mingw49_32/mkspecs/features/lex.prf \
 		AngryThing.pro \
 		C:/Qt/Qt5.6.0/5.6/mingw49_32/lib/qtmain.prl \
+		C:/Qt/Qt5.6.0/5.6/mingw49_32/lib/Qt5Multimedia.prl \
 		C:/Qt/Qt5.6.0/5.6/mingw49_32/lib/Qt5Widgets.prl \
 		C:/Qt/Qt5.6.0/5.6/mingw49_32/lib/Qt5Gui.prl \
+		C:/Qt/Qt5.6.0/5.6/mingw49_32/lib/Qt5Network.prl \
 		C:/Qt/Qt5.6.0/5.6/mingw49_32/lib/Qt5Core.prl
 	$(QMAKE) -spec win32-g++ CONFIG+=qml_debug CONFIG+=force_debug_info CONFIG+=separate_debug_info -o Makefile AngryThing.pro
 C:/Qt/Qt5.6.0/5.6/mingw49_32/mkspecs/features/spec_pre.prf:
@@ -327,8 +329,10 @@ C:/Qt/Qt5.6.0/5.6/mingw49_32/mkspecs/features/yacc.prf:
 C:/Qt/Qt5.6.0/5.6/mingw49_32/mkspecs/features/lex.prf:
 AngryThing.pro:
 C:/Qt/Qt5.6.0/5.6/mingw49_32/lib/qtmain.prl:
+C:/Qt/Qt5.6.0/5.6/mingw49_32/lib/Qt5Multimedia.prl:
 C:/Qt/Qt5.6.0/5.6/mingw49_32/lib/Qt5Widgets.prl:
 C:/Qt/Qt5.6.0/5.6/mingw49_32/lib/Qt5Gui.prl:
+C:/Qt/Qt5.6.0/5.6/mingw49_32/lib/Qt5Network.prl:
 C:/Qt/Qt5.6.0/5.6/mingw49_32/lib/Qt5Core.prl:
 qmake: FORCE
 	@$(QMAKE) -spec win32-g++ CONFIG+=qml_debug CONFIG+=force_debug_info CONFIG+=separate_debug_info -o Makefile AngryThing.pro

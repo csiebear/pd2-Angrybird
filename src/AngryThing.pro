@@ -4,7 +4,7 @@
 #
 #-------------------------------------------------
 
-QT       += core gui
+QT       += core gui multimedia
 
 greaterThan(QT_MAJOR_VERSION, 4): QT += widgets
 
@@ -17,7 +17,7 @@ SOURCES += main.cpp\
     gameitem.cpp \
     bird.cpp \
     land.cpp \
-    button.cpp
+    btn.cpp
 
 HEADERS  += mainwindow.h \
     Box2D/Collision/Shapes/b2ChainShape.h \
@@ -70,7 +70,7 @@ HEADERS  += mainwindow.h \
     gameitem.h \
     bird.h \
     land.h \
-    button.h
+    btn.h
 
 FORMS    += mainwindow.ui
 

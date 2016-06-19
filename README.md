@@ -1,12 +1,24 @@
 # The Project 3 for the Program Design 2016
-The code is clone from the TA's [source code]:https://github.com/csiebear/pd2-Angrybird
+The code is clone from the TA's [source code]:https://github.com/ncku-pd2/Example-code-for-Project-3)
+And most of code is refer to :[BBTAN-on-Qt](https://github.com/kevinbird61/BBTAN-on-Qt)
 
-I modify some place:
-+The mainwindow Icon;
-+The mainwindow Title;
-+Add the button for control the game(start/exit and its img);
-+The time elasped(not yet adding)
-+The scroe board(not yet adding)
+
+
+I modify/add something:
+* The mainwindow Icon;
+[icon_source](http://mepopedia.com/~web103-c/hw05/hw05-1025445108/images/2010090218139_4.gif)
+* The mainwindow Title;
+* The background picture(at the start list);
+[bgpic_source](http://wallpaperscraft.ru/image/angry_birds_seasons_angry_birds_ptitsy_svini_yajtsa_piknik_97830_960x544.jpg)
+* Add background music;
+[bgm_source](https://www.youtube.com/watch?v=MOZky11wmwI)
+background music cut from the 0:00 to 1:10
+* Add the button for control the game(start/exit and its img);
+(but the control doesn't complete)
+
+* The time elasped(not yet adding)
+* The scroe board(not yet adding)
+
 
 The following is TA original ReadMe.md
 # AngryThings

@@ -8,13 +8,14 @@
 #include <QTimer>
 #include <Box2D/Box2D.h>
 #include <QMouseEvent>
-#include <QLabel>
+#include <QMediaPlayer>
+#include <QGraphicsPixmapItem>
 #include <iostream>
 
 #include <gameitem.h>
 #include <land.h>
 #include <bird.h>
-#include <button.h>
+#include <btn.h>
 
 namespace Ui {
 class MainWindow;
@@ -45,9 +46,10 @@ private:
     b2World *world;
     QList<GameItem *> itemList;
     QTimer timer;
+    QMediaPlayer * bgm;
     //the follow is the button will add into the graphic scene
-    button *startbutton;
-    button *exitbutton;
+    Btn *btn_start;
+    Btn *btn_exit;
 
 };
 
