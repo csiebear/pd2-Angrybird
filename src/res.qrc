@@ -2,5 +2,8 @@
     <qresource prefix="/">
         <file alias="ground.png">image/GROUND.png</file>
         <file alias="bird.png">image/Normal_Bird_1.png</file>
+        <file>image/theBearIcon.png</file>
+        <file>image/start_button.jpg</file>
+        <file>image/exit_button.jpg</file>
     </qresource>
 </RCC>

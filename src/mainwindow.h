@@ -8,11 +8,13 @@
 #include <QTimer>
 #include <Box2D/Box2D.h>
 #include <QMouseEvent>
+#include <QLabel>
 #include <iostream>
 
 #include <gameitem.h>
 #include <land.h>
 #include <bird.h>
+#include <button.h>
 
 namespace Ui {
 class MainWindow;
@@ -39,9 +41,14 @@ private slots:
 private:
     Ui::MainWindow *ui;
     QGraphicsScene *scene;
+    QGraphicsScene *background;
     b2World *world;
     QList<GameItem *> itemList;
     QTimer timer;
+    //the follow is the button will add into the graphic scene
+    button *startbutton;
+    button *exitbutton;
+
 };
 
 #endif // MAINWINDOW_H

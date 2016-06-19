@@ -20,6 +20,7 @@ void MainWindow::showEvent(QShowEvent *)
     // Setting the QGraphicsScene
     scene = new QGraphicsScene(0,0,width(),ui->graphicsView->height());
     ui->graphicsView->setScene(scene);
+
     // Create world
     world = new b2World(b2Vec2(0.0f, -9.8f));
     // Setting Size
@@ -28,10 +29,28 @@ void MainWindow::showEvent(QShowEvent *)
     itemList.push_back(new Land(16,1.5,32,3,QPixmap(":/ground.png").scaled(width(),height()/6.0),world,scene));
 
     // Create bird (You can edit here)
-    Bird *birdie = new Bird(0.0f,10.0f,0.27f,&timer,QPixmap(":/bird.png").scaled(height()/9.0,height()/9.0),world,scene);
+    //Bird *birdie = new Bird(0.0f,10.0f,0.27f,&timer,QPixmap(":/bird.png").scaled(height()/9.0,height()/9.0),world,scene);
+    //Bird *birdie2 = new Bird(10.0f,10.0f,0.27f,&timer,QPixmap(":/bird.png").scaled(height()/9.0,height()/9.0),world,scene);
     // Setting the Velocity
-    birdie->setLinearVelocity(b2Vec2(5,5));
-    itemList.push_back(birdie);
+    //birdie->setLinearVelocity(b2Vec2(5,5));
+    //birdie2->setLinearVelocity(b2Vec2(5,5));
+    //itemList.push_back(birdie);
+
+
+    //creating an start button and it's function like the land
+    QPixmap start_btn_pic;
+    start_btn_pic.load(":/image/start_button.jpg");
+    start_btn_pic = start_btn_pic.scaled(start_btn_pic.width(),start_btn_pic.height(),Qt::KeepAspectRatio);
+    startbutton=new button(16,14,8,2,start_btn_pic,world,scene);
+    itemList.push_back(startbutton);
+
+    //creating an exit button and it's function like the land
+    QPixmap exit_btn_pic;
+    exit_btn_pic.load(":/image/exit_button.jpg");
+    exit_btn_pic = exit_btn_pic.scaled(exit_btn_pic.width(),exit_btn_pic.height(),Qt::KeepAspectRatio);
+    exitbutton=new button(16,10,8,2,exit_btn_pic,world,scene);
+    itemList.push_back(exitbutton);
+
     // Timer
     connect(&timer,SIGNAL(timeout()),this,SLOT(tick()));
     connect(this,SIGNAL(quitGame()),this,SLOT(QUITSLOT()));
@@ -44,17 +63,17 @@ bool MainWindow::eventFilter(QObject *, QEvent *event)
     if(event->type() == QEvent::MouseButtonPress)
     {
         /* TODO : add your code here */
-        //std::cout << "Press !" << std::endl ;
+        std::cout << "Press !" << std::endl ;
     }
     if(event->type() == QEvent::MouseMove)
     {
         /* TODO : add your code here */
-        //std::cout << "Move !" << std::endl ;
+        std::cout << "Move !" << std::endl ;
     }
     if(event->type() == QEvent::MouseButtonRelease)
     {
         /* TODO : add your code here */
-        //std::cout << "Release !" << std::endl ;
+        std::cout << "Release !" << std::endl ;
     }
     return false;
 }

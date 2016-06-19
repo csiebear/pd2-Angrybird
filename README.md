@@ -1,3 +1,14 @@
+# The Project 3 for the Program Design 2016
+The code is clone from the TA's [source code]:https://github.com/csiebear/pd2-Angrybird
+
+I modify some place:
++The mainwindow Icon;
++The mainwindow Title;
++Add the button for control the game(start/exit and its img);
++The time elasped(not yet adding)
++The scroe board(not yet adding)
+
+The following is TA original ReadMe.md
 # AngryThings
 Final project of 2016 Spring Class
 
